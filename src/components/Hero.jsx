@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center">
         {/* Left Section: Text */}
         <div className="w-full lg:w-1/2 flex justify-center">
-          <div className="flex flex-col items-center px-3 text-center">
+          <div className="flex flex-col items-center px-2 text-center">
             <motion.h1
               variants={container(0)}
               initial="hidden"
