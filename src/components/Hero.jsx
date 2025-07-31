@@ -17,12 +17,12 @@ const Hero = () => {
       <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center">
         {/* Left Section: Text */}
         <div className="w-full lg:w-1/2 flex justify-center">
-          <div className="flex flex-col items-center px-2 text-center">
+          <div className="flex flex-col items-center px-3 text-center">
             <motion.h1
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="text-4xl lg:text-6xl font-thin tracking-tight text-white mt-2 lg:mt-16 mb-10"
+              className="text-3xl lg:text-6xl font-thin tracking-tight text-white mt-2 lg:mt-16 mb-10"
             >
               Hi! I'm Prakhar Gupta
             </motion.h1>
