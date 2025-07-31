@@ -1,6 +1,6 @@
 import { HERO_CONTENT } from "../constants";
 import { TypeAnimation } from 'react-type-animation';
-import { motion } from "motion/react";
+import { motion } from "framer-motion"; // ✅ Corrected import
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -26,23 +26,25 @@ const Hero = () => {
             >
               Hi! I'm Prakhar Gupta
             </motion.h1>
-           <motion.div
-  variants={container(0.5)}
-  initial="hidden"
-  animate="visible"
->
-  <TypeAnimation
-    sequence={[
-      'Aspiring Full Stack Developer', 4000,
-      'Full Stack Enthusiast', 4000,
-      'Tech Explorer 🚀', 4000,
-    ]}
-    wrapper="span"
-    speed={20}
-    repeat={Infinity}
-    className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
-  />
-</motion.div>
+
+            <motion.div
+              variants={container(0.5)}
+              initial="hidden"
+              animate="visible"
+            >
+              <TypeAnimation
+                sequence={[
+                  'Aspiring Full Stack Developer', 4000,
+                  'Full Stack Enthusiast', 4000,
+                  'Tech Explorer 🚀', 4000,
+                ]}
+                wrapper="span"
+                speed={20}
+                repeat={Infinity}
+                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+              />
+            </motion.div>
+
             <motion.p
               variants={container(1)}
               initial="hidden"
