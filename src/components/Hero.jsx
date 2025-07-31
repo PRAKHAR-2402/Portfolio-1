@@ -41,7 +41,7 @@ const Hero = () => {
                 wrapper="span"
                 speed={20}
                 repeat={Infinity}
-                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-2xl tracking-tight text-transparent"
               />
             </motion.div>
 
