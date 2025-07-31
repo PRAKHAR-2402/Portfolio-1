@@ -29,7 +29,7 @@ const Education = () => {
               className="w-full max-w-xl lg:w-3/4"
             >
               <h6 className="md-2 font-semibold">
-                <span className="text-purple-100">{education.title}</span>
+                <span className="text-purple-100 text-justify">{education.title}</span>
               </h6>
               <p className="mb-4 mt-2 text-neutral-400">{education.address}</p>
             </motion.div>
